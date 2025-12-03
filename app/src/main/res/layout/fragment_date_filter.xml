@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brand_magenta"
+    android:orientation="vertical">
+
+    <!-- Header: Icono calendario + Título + Cerrar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/iconCalendar"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_calendar_24"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/iconCalendar"
+            android:layout_marginStart="8dp"
+            android:text="Filtra por Fecha"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif-medium"/>
+
+        <ImageView
+            android:id="@+id/btnCloseFilter"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_close_white_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </RelativeLayout>
+
+    <!-- Lista de Fechas -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Hoy -->
+            <TextView
+                style="@style/DateFilterItem"
+                android:text="Hoy" />
+            <View style="@style/DateFilterDivider" />
+
+            <!-- Mañana -->
+            <TextView
+                style="@style/DateFilterItem"
+                android:text="Mañana" />
+            <View style="@style/DateFilterDivider" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

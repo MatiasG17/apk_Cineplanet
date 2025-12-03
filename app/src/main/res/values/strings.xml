@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">CinePlanet</string>
+    <string name="promo_default">PRE-VENTA</string>
+    <string name="content_desc_search">Buscar</string>
+    <string name="content_desc_rewards">Beneficios</string>
+    <string name="content_desc_profile">Perfil</string>
+    <string name="content_desc_help">Ayuda</string>
+
+    <string name="nav_home">Inicio</string>
+    <string name="nav_movies">Películas</string>
+    <string name="nav_cinemas">Cines</string>
+    <string name="nav_snacks">Dulcería</string>
+    <string name="nav_more">Más</string>
+
+    <string name="header_home">Cineplanet</string>
+    <string name="header_movies">Películas</string>
+    <string name="header_cinemas">Cines</string>
+    <string name="header_snacks">Dulcería</string>
+    <string name="header_more">Más</string>
+</resources>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/brand_blue"
+    android:orientation="vertical">
+
+    <!-- Header: Icono ubicación + Título + Cerrar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/iconLocation"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_location_24"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/iconLocation"
+            android:layout_marginStart="8dp"
+            android:text="Filtra por Ciudad"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            android:fontFamily="sans-serif-medium"/>
+
+        <ImageView
+            android:id="@+id/btnCloseFilter"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_close_white_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </RelativeLayout>
+
+    <!-- Lista de Ciudades -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Lima -->
+            <TextView
+                style="@style/CityFilterItem"
+                android:text="Lima" />
+            <View style="@style/CityFilterDivider" />
+
+            <!-- Chiclayo -->
+            <TextView
+                style="@style/CityFilterItem"
+                android:text="Chiclayo" />
+            <View style="@style/CityFilterDivider" />
+
+            <!-- Juliaca -->
+            <TextView
+                style="@style/CityFilterItem"
+                android:text="Juliaca" />
+            <View style="@style/CityFilterDivider" />
+
+            <!-- Arequipa -->
+            <TextView
+                style="@style/CityFilterItem"
+                android:text="Arequipa" />
+            <View style="@style/CityFilterDivider" />
+
+            <!-- Cajamarca -->
+            <TextView
+                style="@style/CityFilterItem"
+                android:text="Cajamarca" />
+            <View style="@style/CityFilterDivider" />
+
+            <!-- Piura -->
+            <TextView
+                style="@style/CityFilterItem"
+                android:text="Piura" />
+            <View style="@style/CityFilterDivider" />
+
+            <!-- Huancayo -->
+            <TextView
+                style="@style/CityFilterItem"
+                android:text="Huancayo" />
+            <View style="@style/CityFilterDivider" />
+
+            <!-- Cusco -->
+            <TextView
+                style="@style/CityFilterItem"
+                android:text="Cusco" />
+            <View style="@style/CityFilterDivider" />
+
+            <!-- Pucallpa -->
+            <TextView
+                style="@style/CityFilterItem"
+                android:text="Pucallpa" />
+            <View style="@style/CityFilterDivider" />
+
+            <!-- Huánuco -->
+            <TextView
+                style="@style/CityFilterItem"
+                android:text="Huánuco" />
+            <View style="@style/CityFilterDivider" />
+
+            <!-- Tacna -->
+            <TextView
+                style="@style/CityFilterItem"
+                android:text="Tacna" />
+            <View style="@style/CityFilterDivider" />
+
+            <!-- Trujillo -->
+            <TextView
+                style="@style/CityFilterItem"
+                android:text="Trujillo" />
+            <View style="@style/CityFilterDivider" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
